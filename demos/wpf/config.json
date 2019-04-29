@@ -1,0 +1,51 @@
+﻿{
+  "configs": {
+    "index": 1,
+    "list": [
+      {
+          "global_config": {
+            "db_encrypt_key": "fe416640c8e8a72734219e1847ad2547",
+            "preload_attach": true,
+            "sdk_log_level": 6,
+            "private_server_setting": true
+          },
+          "private_server_setting": {
+            "lbs": "http://223.252.220.223/lbs/conf",
+            "nos_lbs": "http://wanproxy.127.net/lbs?version=1.0",
+            "default_link": [ "223.252.220.222:2000" ],
+            "default_nos_upload": [ "http://223.252.196.40" ],
+            "default_nos_download": [ "http://nos.netease.com" ],
+            "default_nos_access": null,
+            "rsa_public_key_module": "00e3afe7487e6ac9ba69654672672ceddc05d5b6d45850859f11004d30c63e3691afd55722bdd2c75232b2a3561776201f84def8e38c508870ca7692b4228b0478e104460d7800dee3b6c3d8f89746ed48ee94f268f42b9c911437083d3815624e50de3fec3c0ec8ab3e71d5bdce3f4291d20538893cacdc00da9d1390ee39440d"
+          },
+        "app_key": "fe416640c8e8a72734219e1847ad2547",
+        "roomlistserver": "http://223.252.220.238:8080/api/chatroom/homeList"
+      },
+      {
+        "server": "",
+        "app_key": "45c6af3c98409b18a84451215d0bdd6e",
+        "roomlistserver": "https://app.netease.im/api/chatroom/homeList"
+      },
+	  {
+          "global_config": {
+            "db_encrypt_key": "fe416640c8e8a72734219e1847ad2547",
+            "preload_attach": true,
+            "sdk_log_level": 6,
+            "private_server_setting": true,
+			"download_address_template":["192.249.87.91:10080/{bucket}/{object}"]
+          },
+          "private_server_setting": {
+            "lbs": "http://192.249.87.93/lbs/conf.jsp",
+            "nos_lbs": "http://192.249.87.93/lbs/noslbs.jsp",
+            "default_link": [ "192.249.87.68:10180" ],
+            "default_nos_upload": [ "http://192.249.87.91:10080" ],
+            "default_nos_download": [ "http://nos.netease.com" ],
+            "default_nos_access": null,
+            "rsa_public_key_module": "00a40daf85485919d13d7db20ff5effa9e812424bb8e056f306a4a7ccf4ebca1cd7c6ae61e5c10be9f89d7e49af07ebb5e60f47e62da6c43497f1a345cc7ae2f215020d5572616f73666161ef9495308f9ae2c107f8100f9562265e77b444afef8fcd657e59451cdc7b664a3e339b35e2732d5d89108c22f9c8b3b44d86194d0a5"
+			},
+        "app_key": "f36834bef8c11d1e4788e9a7c66e0245",
+        "roomlistserver": "http://192.249.87.93/lbs/chatroomList.jsp"
+      }
+    ]
+  }
+}

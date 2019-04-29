@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F7A7835E-7B3D-4552-B0FB-0802A35CDC18}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NIMDemo</RootNamespace>
+    <AssemblyName>NIMDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>N:\NIMPublish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>5</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NIMAPI_UNDER_WIN_DESKTOP_ONLY</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NIMAPI_UNDER_WIN_DESKTOP_ONLY</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>default</LangVersion>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7F0626B764D7A78440F46D8BA0816B55BCC43742</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>NIMDemo_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>NIMDemo.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>default</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle">
+      <HintPath>Dependents\BouncyCastle.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Dependents\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependents\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NimAudio">
+      <HintPath>Dependents\NimAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NimChatRoom">
+      <HintPath>Dependents\NimChatRoom.dll</HintPath>
+    </Reference>
+    <Reference Include="NimCore">
+      <HintPath>Dependents\NimCore.dll</HintPath>
+    </Reference>
+    <Reference Include="NimHttp">
+      <HintPath>Dependents\NimHttp.dll</HintPath>
+    </Reference>
+    <Reference Include="NimUtility">
+      <HintPath>Dependents\NimUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio\AudioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audio\AudioForm.Designer.cs">
+      <DependentUpon>AudioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVChat\AVDevicesSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVChat\AVDevicesSettingForm.Designer.cs">
+      <DependentUpon>AVDevicesSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beauty\ColorBalance.cs" />
+    <Compile Include="Beauty\Smooth.cs" />
+    <Compile Include="ByPassLivingStream\BypassLivingStreamChoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ByPassLivingStream\BypassLivingStreamChoiceForm.Designer.cs">
+      <DependentUpon>BypassLivingStreamChoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ByPassLivingStream\BypassLivingStreamCommon.cs" />
+    <Compile Include="ByPassLivingStream\BypassLivingStreamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ByPassLivingStream\BypassLivingStreamForm.Designer.cs">
+      <DependentUpon>BypassLivingStreamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chatroom\AvailableRooms.cs" />
+    <Compile Include="Chatroom\ChatRoomListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chatroom\ChatRoomListForm.Designer.cs">
+      <DependentUpon>ChatRoomListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\ChatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\ChatForm.Designer.cs">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\CryptoHelper.cs" />
+    <Compile Include="Helper\DumpHelper.cs" />
+    <Compile Include="Helper\ScreenCaptureHelper.cs" />
+    <Compile Include="Helper\UserHelper.cs" />
+    <Compile Include="Helper\ZipHelper.cs" />
+    <Compile Include="Http\DocTransForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Http\DocTransForm.Designer.cs">
+      <DependentUpon>DocTransForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Http\HttpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Http\HttpForm.Designer.cs">
+      <DependentUpon>HttpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\InvokeActionWrapper.cs" />
+    <Compile Include="LivingStreamSDK\LivingStreamDefine.cs" />
+    <Compile Include="LivingStreamSDK\LSClientNativeMethods.cs" />
+    <Compile Include="LivingStreamSDK\LSGlobalDef.cs" />
+    <Compile Include="LivingStreamSDK\LsManage.cs" />
+    <Compile Include="LivingStreamSDK\nimSDKHelper.cs" />
+    <Compile Include="LivingStreamSDK\YUVHelper.cs" />
+    <Compile Include="LivingStream\LivingStreamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LivingStream\LivingStreamForm.Designer.cs">
+      <DependentUpon>LivingStreamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\ProxySettingForm.cs" />
+    <Compile Include="Login\ProxySettingForm.Designer.cs">
+      <DependentUpon>ProxySettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\ClientCallbacks.cs" />
+    <Compile Include="Helper\InfomationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\InfomationForm.Designer.cs">
+      <DependentUpon>InfomationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login\AccountManager.cs" />
+    <Compile Include="Login\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApiTest\ApiTestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApiTest\ApiTestForm.Designer.cs">
+      <DependentUpon>ApiTestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Msg\MessageExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Msg\MessageExport.Designer.cs">
+      <DependentUpon>MessageExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rts\RtsForm.Designer.cs">
+      <DependentUpon>RtsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVChat\InputRoomIdForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVChat\InputRoomIdForm.Designer.cs">
+      <DependentUpon>InputRoomIdForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVChat\MultimediaHandler.cs" />
+    <Compile Include="AVChat\MultiVChatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVChat\MultiVChatForm.Designer.cs">
+      <DependentUpon>MultiVChatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVChat\VideoChatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVChat\VideoChatForm.Designer.cs">
+      <DependentUpon>VideoChatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AVChat\VideoFrame.cs" />
+    <Compile Include="Helper\ContextMenuGenerator.cs" />
+    <Compile Include="Msg\MessageLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Msg\MsgAttachmentInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Msg\MsgAttachmentInfoForm.Designer.cs">
+      <DependentUpon>MsgAttachmentInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ObjectOutput.cs" />
+    <Compile Include="Helper\ObjectPropertyInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\ObjectPropertyInfoForm.Designer.cs">
+      <DependentUpon>ObjectPropertyInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Helper\DemoTrace.cs" />
+    <Compile Include="Friend\FriendProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Friend\FriendProfileForm.Designer.cs">
+      <DependentUpon>FriendProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Session\RecentSessionList.cs" />
+    <Compile Include="Robot\RobotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Robot\RobotForm.Designer.cs">
+      <DependentUpon>RobotForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rts\PaintingRecord.cs" />
+    <Compile Include="Rts\RtsConference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rts\RtsConference.Designer.cs">
+      <DependentUpon>RtsConference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rts\RtsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rts\RtsHandler.cs" />
+    <Compile Include="Session\SessionList.cs" />
+    <Compile Include="Signaling\SignalingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signaling\SignalingForm.Designer.cs">
+      <DependentUpon>SignalingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubscribeEvent\SubscribeEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubscribeEvent\SubscribeEventForm.Designer.cs">
+      <DependentUpon>SubscribeEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Msg\SysMsgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Team\CreateAdvancedTeamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Team\CreateAdvancedTeamForm.Designer.cs">
+      <DependentUpon>CreateAdvancedTeamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Team\CreateTeamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Team\CreateTeamForm.Designer.cs">
+      <DependentUpon>CreateTeamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Team\TeamList.cs" />
+    <Compile Include="Team\TeamMembersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Team\TeamMembersForm.Designer.cs">
+      <DependentUpon>TeamMembersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ConfigReader.cs" />
+    <Compile Include="Tools\OutputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\OutputForm.Designer.cs">
+      <DependentUpon>OutputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\OutputInfoText.cs" />
+    <EmbeddedResource Include="Audio\AudioForm.resx">
+      <DependentUpon>AudioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVChat\AVDevicesSettingForm.resx">
+      <DependentUpon>AVDevicesSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ByPassLivingStream\BypassLivingStreamChoiceForm.resx">
+      <DependentUpon>BypassLivingStreamChoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ByPassLivingStream\BypassLivingStreamForm.resx">
+      <DependentUpon>BypassLivingStreamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chatroom\ChatRoomListForm.resx">
+      <DependentUpon>ChatRoomListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\ChatForm.resx">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Http\DocTransForm.resx">
+      <DependentUpon>DocTransForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Http\HttpForm.resx">
+      <DependentUpon>HttpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LivingStream\LivingStreamForm.resx">
+      <DependentUpon>LivingStreamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\ProxySettingForm.resx">
+      <DependentUpon>ProxySettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper\InfomationForm.resx">
+      <DependentUpon>InfomationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApiTest\ApiTestForm.resx">
+      <DependentUpon>ApiTestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Msg\MessageExport.resx">
+      <DependentUpon>MessageExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rts\RtsForm.resx">
+      <DependentUpon>RtsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVChat\InputRoomIdForm.resx">
+      <DependentUpon>InputRoomIdForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVChat\MultiVChatForm.resx">
+      <DependentUpon>MultiVChatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AVChat\VideoChatForm.resx">
+      <DependentUpon>VideoChatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Msg\MessageLogForm.resx">
+      <DependentUpon>MessageLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Msg\MsgAttachmentInfoForm.resx">
+      <DependentUpon>MsgAttachmentInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Helper\ObjectPropertyInfoForm.resx">
+      <DependentUpon>ObjectPropertyInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Friend\FriendProfileForm.resx">
+      <DependentUpon>FriendProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Robot\RobotForm.resx">
+      <DependentUpon>RobotForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rts\RtsConference.resx">
+      <DependentUpon>RtsConference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signaling\SignalingForm.resx">
+      <DependentUpon>SignalingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubscribeEvent\SubscribeEventForm.resx">
+      <DependentUpon>SubscribeEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Team\CreateAdvancedTeamForm.resx">
+      <DependentUpon>CreateAdvancedTeamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Team\CreateTeamForm.resx">
+      <DependentUpon>CreateTeamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Team\TeamMembersForm.resx">
+      <DependentUpon>TeamMembersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\OutputForm.resx">
+      <DependentUpon>OutputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\logo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>cd /d $(ProjectDir)Dependents\dllimport\$(PlatformName)
+echo copy native dlls 
+for %25%25i in (*.dll) do if not exist "$(TargetDir)%25%25i" (copy /Y %25%25i "$(TargetDir)%25%25i");
+echo copy livingStream
+if exist "livingStream" ( xcopy "livingStream\*.dll"  /d /e /r  "$(TargetDir)livingStream\")
+echo update managed dlls
+cd /d $(TargetDir) 
+set target="$(ProjectDir)Dependents\"
+echo %25target%25
+copy /Y "NimAudio.dll" %25target%25
+copy /Y "NIMChatRoom.dll" %25target%25
+copy /Y "NimCore.dll" %25target%25
+copy /Y "NimHttp.dll" %25target%25
+copy /Y "NimUtility.dll" %25target%25)
+
+</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
