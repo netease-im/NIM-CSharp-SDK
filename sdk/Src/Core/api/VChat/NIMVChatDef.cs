@@ -206,27 +206,23 @@ namespace NIM
 	/// </summary>
 	public enum NIMVideoChatSessionNetStat
 	{
-		/// <summary>
-		/// 网络状态很好
-		/// </summary>
-		kNIMVideoChatSessionNetStatVeryGood = 0,
-		/// <summary>
-		/// 网络状态较好
-		/// </summary>
-		kNIMVideoChatSessionNetStatGood = 1,
+        /// <summary>
+        /// 网络状态极差，视频强制关闭
+        /// </summary>
+        kNIMVChatNetStatusVideoClose = -1,
+        /// <summary>
+        /// 网络状态较好
+        /// </summary>
+        kNIMVideoChatSessionNetStatGood = 0,
         /// <summary>
         /// 网络状态较差
         /// </summary>
-        kNIMVideoChatSessionNetStatPoor = 2, 
+        kNIMVideoChatSessionNetStatPoor = 1,
         /// <summary>
         /// 网络状态很差
         /// </summary>
-        kNIMVideoChatSessionNetStatBad = 3,
-		/// <summary>
-		/// 网络状态极差，考虑是否关闭视频
-		/// </summary>
-		kNIMVideoChatSessionNetStatVeryBad = 4,
-	};
+        kNIMVideoChatSessionNetStatBad = 2,
+    };
 #if NIMAPI_UNDER_WIN_DESKTOP_ONLY
 	/// <summary>
 	/// 视频通话分辨率，最终长宽比不保证
@@ -327,6 +323,18 @@ namespace NIM
         /// 已经存在一个主播
         /// </summary>     
         kNIMVChatConnectRtmpHostError = 105,
+        /// <summary>
+        /// 需要旁路直播, 但频道创建者非主播
+        /// </summary>
+        kNIMVChatConnectRtmpCreateError = 106,
+        /// <summary>
+        /// 服务器验证内部错误
+        /// </summary>
+        kNIMVChatJoinServerValidError = 107,
+        /// <summary>
+        /// 频道已经关闭
+        /// </summary>
+        kNIMVChatJoinChannelClosed = 108,
         /// <summary>
         /// 成功
         /// </summary>
