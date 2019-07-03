@@ -11,7 +11,7 @@
 git clone https://github.com/netease-im/NIM-CSharp-SDK
 ```
 
-使用 Visual Studio 2010或以上版本 IDE 打开 `sdk_with_wpf_demo.sln`，解决方案包括一个可视化测试应用程序工程。正式编译和调试解决方案之前，建议开发者简单看下编译配置、平台配置以及工程配置，合理的选择编译条件以及了解并按需自定义和选择工程的输出目录等设置项。
+使用 Visual Studio 2010或以上版本 IDE 打开 `nim.sln`，解决方案包括一个可视化测试应用程序工程。正式编译和调试解决方案之前，建议开发者简单看下编译配置、平台配置以及工程配置，合理的选择编译条件以及了解并按需自定义和选择工程的输出目录等设置项。
 
 ## 文档
 
@@ -21,7 +21,7 @@ git clone https://github.com/netease-im/NIM-CSharp-SDK
 
 ├─`config`    编译配置文件    
 ├─`demos`     配套可视化测试程序    
-│   └─`wpf`   win32测试程序    
+│   └─`winform` winform测试程序    
 └─`sdk`         SDK封装源码      
 │   ├─`libs`    云信WindowsPC SDK库文件（包含x86和x64平台）  
 │   ├─`Src`     源码    
