@@ -113,21 +113,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Dependents\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NimAudio">
-      <HintPath>Dependents\NimAudio.dll</HintPath>
-    </Reference>
-    <Reference Include="NimChatRoom">
-      <HintPath>Dependents\NimChatRoom.dll</HintPath>
-    </Reference>
-    <Reference Include="NimCore">
-      <HintPath>Dependents\NimCore.dll</HintPath>
-    </Reference>
-    <Reference Include="NimHttp">
-      <HintPath>Dependents\NimHttp.dll</HintPath>
-    </Reference>
-    <Reference Include="NimUtility">
-      <HintPath>Dependents\NimUtility.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -495,6 +480,28 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\sdk\Src\Audio\NimAudio.csproj">
+      <Project>{a4fc140e-8c55-4e25-b7c3-9110df69222b}</Project>
+      <Name>NimAudio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\sdk\Src\ChatRoom\NimChatRoom.csproj">
+      <Project>{c6e81245-e678-4608-b649-4ebd6244210a}</Project>
+      <Name>NimChatRoom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\sdk\Src\Core\NimCore.csproj">
+      <Project>{3f88dd96-1392-409a-89e8-475fc56e4647}</Project>
+      <Name>NimCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\sdk\Src\Http\NimHttp.csproj">
+      <Project>{b211b7e3-96b2-453b-b9c0-1a98dc6794ce}</Project>
+      <Name>NimHttp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\sdk\Src\Utility\NimUtility.csproj">
+      <Project>{a9141f3e-b530-49ee-b959-16a49e1c98b1}</Project>
+      <Name>NimUtility</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -1,7 +1,7 @@
 @echo off
 
 set win32_native_dlls_path_src=..\sdk\libs\win32\
-set win32_native_dlls_path_des=..\demos\wpf\Dependents\dllimport\
+set win32_native_dlls_path_des=..\demos\winform\Dependents\dllimport\
 
 echo %win32_native_dlls_path_src%
 echo %win32_native_dlls_path_des%
