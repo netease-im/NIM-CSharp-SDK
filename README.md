@@ -15,7 +15,7 @@ git clone https://github.com/netease-im/NIM-CSharp-SDK
 
 ## 文档
 
-- [Windows(PC) SDK 开发手册(C# 封装层)](sdk/README.md)
+- [Windows(PC) SDK 开发手册(C# 封装层)](https://dev.yunxin.163.com/docs/product/%E9%80%9A%E7%94%A8/Demo%E6%BA%90%E7%A0%81%E5%AF%BC%E8%AF%BB/PC%E9%80%9A%E7%94%A8/CSharp%E5%B0%81%E8%A3%85%E5%B1%82)
 
 ## 目录结构
 
