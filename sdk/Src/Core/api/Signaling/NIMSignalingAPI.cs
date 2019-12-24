@@ -97,7 +97,8 @@ namespace NIM.Signaling
             }
             catch (Exception)
             {
-                cb?.Invoke(NIMSignalingCreateResCode.kAbnormal, null);
+                if (cb != null)
+                    cb.Invoke(NIMSignalingCreateResCode.kAbnormal, null);
             }
             finally
             {
@@ -126,7 +127,8 @@ namespace NIM.Signaling
             }
             catch (Exception)
             {
-                cb?.Invoke(NIMSignalingCloseOrLeaveResCode.kAbnormal);
+                if (cb != null)
+                    cb.Invoke(NIMSignalingCloseOrLeaveResCode.kAbnormal);
             }
             finally
             {
@@ -152,7 +154,8 @@ namespace NIM.Signaling
             }
             catch (Exception)
             {
-                cb?.Invoke(NIMSignalingJoinResCode.kAbnormal, null);
+                if (cb != null)
+                    cb.Invoke(NIMSignalingJoinResCode.kAbnormal, null);
             }
             finally
             {
@@ -178,7 +181,8 @@ namespace NIM.Signaling
             }
             catch (Exception)
             {
-                cb?.Invoke(NIMSignalingCloseOrLeaveResCode.kAbnormal);
+                if (cb != null)
+                    cb.Invoke(NIMSignalingCloseOrLeaveResCode.kAbnormal);
             }
             finally
             {
@@ -207,7 +211,8 @@ namespace NIM.Signaling
             }
             catch (Exception)
             {
-                cb?.Invoke(NIMSignalingCallResCode.kAbnormal, null);
+                if (cb != null)
+                    cb.Invoke(NIMSignalingCallResCode.kAbnormal, null);
             }
             finally
             {
@@ -235,7 +240,8 @@ namespace NIM.Signaling
             }
             catch (Exception)
             {
-                cb?.Invoke(NIMSignalingInviteResCode.kAbnormal);
+                if (cb != null)
+                    cb.Invoke(NIMSignalingInviteResCode.kAbnormal);
             }
             finally
             {
@@ -262,7 +268,8 @@ namespace NIM.Signaling
             }
             catch (Exception)
             {
-                cb?.Invoke(NIMSignalingCancelInviteResCode.kAbnormal);
+                if (cb != null)
+                    cb.Invoke(NIMSignalingCancelInviteResCode.kAbnormal);
             }
             finally
             {
@@ -289,7 +296,8 @@ namespace NIM.Signaling
             }
             catch (Exception)
             {
-                cb?.Invoke(NIMSignalingRejectOrAcceptResCode.kAbnormal);
+                if (cb != null)
+                    cb.Invoke(NIMSignalingRejectOrAcceptResCode.kAbnormal);
             }
             finally
             {
@@ -319,7 +327,8 @@ namespace NIM.Signaling
             }
             catch (Exception)
             {
-                cb?.Invoke(NIMSignalingRejectOrAcceptResCode.kAbnormal, null);
+                if (cb != null)
+                    cb.Invoke(NIMSignalingRejectOrAcceptResCode.kAbnormal, null);
             }
             finally
             {
@@ -346,7 +355,8 @@ namespace NIM.Signaling
             }
             catch (Exception)
             {
-                cb?.Invoke(NIMSignalingControlResCode.kAbnormal);
+                if (cb != null)
+                    cb.Invoke(NIMSignalingControlResCode.kAbnormal);
             }
             finally
             {

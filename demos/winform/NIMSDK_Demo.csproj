@@ -193,7 +193,9 @@
     <Compile Include="LivingStream\LivingStreamForm.Designer.cs">
       <DependentUpon>LivingStreamForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login\ProxySettingForm.cs" />
+    <Compile Include="Login\ProxySettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Login\ProxySettingForm.Designer.cs">
       <DependentUpon>ProxySettingForm.cs</DependentUpon>
     </Compile>
@@ -518,9 +520,9 @@ copy /Y "NimAudio.dll" %25target%25
 copy /Y "NIMChatRoom.dll" %25target%25
 copy /Y "NimCore.dll" %25target%25
 copy /Y "NimHttp.dll" %25target%25
-copy /Y "NimUtility.dll" %25target%25)
-
-</PostBuildEvent>
+copy /Y "NimUtility.dll" %25target%25
+echo copy NIM SDK to debug folder
+copy /Y $(SolutionDir)sdk\libs\win32\$(PlatformName)_dlls\*.dll $(TargetDir)</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>
