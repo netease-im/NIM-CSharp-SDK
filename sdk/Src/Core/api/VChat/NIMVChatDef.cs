@@ -249,14 +249,14 @@ namespace NIM
 		///视频超高分辨率 640x480
 		/// </summary>       
 		kNIMVChatVideoQualitySuper = 4,
-		///<summary>
-		///用于桌面分享级别的分辨率1280x720，需要使用高清摄像头并指定对应的分辨率，或者自定义通道传输 
-		/// </summary>    
-		kNIMVChatVideoQuality720p = 5,
-		/// <summary>
-		/// 介于720p与480p之间的类型，默认960*540
-		/// </summary>
-		kNIMVChatVideoQuality540p = 6,
+        /// <summary>
+        /// 介于720p与480p之间的类型，默认960*540
+        /// </summary>
+        kNIMVChatVideoQuality540p = 5,
+        ///<summary>
+        ///用于桌面分享级别的分辨率1280x720，需要使用高清摄像头并指定对应的分辨率，或者自定义通道传输 
+        /// </summary>    
+        kNIMVChatVideoQuality720p = 6,
 	};
 
 	/// <summary>
@@ -734,13 +734,13 @@ namespace NIM
         /// </summary>
         kNIMNDVideoQuality480p = 4,
         /// <summary>
-        /// 1280*720
-        /// </summary>
-        kNIMNDVideoQuality720p = 5,
-        /// <summary>
         /// 960*540
         /// </summary>
-        kNIMNDVideoQuality540p = 6,   
+        kNIMNDVideoQuality540p = 5,
+        /// <summary>
+        /// 1280*720
+        /// </summary>
+        kNIMNDVideoQuality720p = 6,
     };
 
     /// <summary>
