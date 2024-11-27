@@ -1,8 +1,8 @@
 # C# SDK
 
-当前C# SDK基于[云信WindowsPC SDK V6.3.0](https://netease.im/im-sdk-demo)输出的C接口封装而成，方便C#开发者方便直观地调用接口使用云信的服务。
-目前C# SDK支持 .NET Framework 3.5及以上版本开发。
-当前C# SDK不适合于Unity框架的接入，如果你有Unity的需求，请至官网下载[UnitySDK](https://doc.yunxin.163.com/messaging/resource?platform=unity)
+- 当前C# SDK基于[云信WindowsPC SDK V6.3.0](https://netease.im/im-sdk-demo)输出的C接口封装而成，方便C#开发者方便直观地调用接口使用云信的服务。
+- 目前C# SDK支持 .NET Framework 3.5及以上版本开发。
+- 当前C# SDK不适合于Unity框架的接入，如果你有Unity的需求，请至官网下载[UnitySDK](https://doc.yunxin.163.com/messaging/resource?platform=unity)
 
 ## 开始
 
